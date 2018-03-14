@@ -40,22 +40,22 @@ filePath = os.path.dirname(os.path.abspath(__file__)) + "/"
 
 print("Current script's schedule:")
 
-follow_followers_list = bot.read_list_from_file("follow_followers_1U.txt")
+follow_followers_list = bot.read_list_from_file(filePath + "follow_followers_1U.txt")
 print("Going to follow followers of:", follow_followers_list)
 
-follow_following_list = bot.read_list_from_file("follow_following_1U.txt")
+follow_following_list = bot.read_list_from_file(filePath + "follow_following_1U.txt")
 print("Going to follow following of:", follow_following_list)
 
-like_hashtags_list = bot.read_list_from_file("like_hashtags_1U.txt")
+like_hashtags_list = bot.read_list_from_file(filePath + "like_hashtags_1U.txt")
 print("Going to like hashtags:", like_hashtags_list)
 
-like_users_list = bot.read_list_from_file("like_users_1U.txt")
+like_users_list = bot.read_list_from_file(filePath + "like_users_1U.txt")
 print("Going to like users:", like_users_list)
 
 
 tasks_list = []
 
-# tasks_list.append((bot.unfollow_non_followers()))
+
 
 for item in follow_followers_list:
     tasks_list.append((bot.follow_followers, {'user_id': item, 'nfollows': None}))
@@ -67,6 +67,7 @@ for item in like_hashtags_list:
     tasks_list.append((bot.like_hashtag, {'hashtag': item, 'amount': None}))
 # for item in like_users_list:
 
+# tasks_list.append((bot.unfollow_non_followers()))
 
 
 # shuffle(tasks_list)
