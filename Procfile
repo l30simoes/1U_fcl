@@ -1,1 +1,1 @@
-worker: python 1U_instabot.py
+worker: python login_1U.py
