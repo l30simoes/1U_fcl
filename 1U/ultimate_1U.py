@@ -50,6 +50,6 @@ for item in like_hashtags_list:
 # for item in like_users_list:
 #     tasks_list.append((bot.like_user, {'user_id': item, 'amount': None}))
 
-# shuffle(tasks_list)
+shuffle(tasks_list)
 for func, arg in tasks_list:
     func(**arg)
