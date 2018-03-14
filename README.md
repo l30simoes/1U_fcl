@@ -1,2 +1,5 @@
 # instamaster_heroku
-test conection insta bot
+Running Instabot 1sturban
+
+- Following
+- Like
