@@ -1,5 +1,6 @@
-# instamaster_heroku
+# insta
 Running Instabot 1sturban
 
 - Following
-- Like
+- Like hashtag
+- comment hashtag
