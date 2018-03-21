@@ -41,9 +41,7 @@ bot = Bot(
 
           )
 # bot.login()
-bot.login(username="1sturban", password="FirstU12#")
-
-# bot.login(username="1nsta_bot001", password="Insta12#")
+bot.login(username="1sturban", password="Insta12#")
 
 print ("Comment file: " + comments_file_name)
 
