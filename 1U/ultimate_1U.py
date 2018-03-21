@@ -26,10 +26,10 @@ comments_file_name = filePath + "comments.txt"
 
 bot = Bot(
             # Max
-            max_follows_per_day=780,
-            max_likes_per_day=800,
-            max_unfollows_per_day=500,
-            max_comments_per_day=1000,
+            max_follows_per_day=500,
+            max_likes_per_day=500,
+            max_unfollows_per_day=300,
+            max_comments_per_day=500,
 
             # Delay
             like_delay=15,
