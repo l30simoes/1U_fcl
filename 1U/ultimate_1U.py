@@ -28,7 +28,6 @@ bot = Bot(
             # Max
             max_follows_per_day=500,
             max_likes_per_day=500,
-            max_unfollows_per_day=300,
             max_comments_per_day=500,
 
             # Delay
@@ -69,8 +68,8 @@ tasks_list = []
 for item in follow_followers_list:
     tasks_list.append((bot.follow_followers, {'user_id': item, 'nfollows': None}))
 
-# for item in follow_following_list:
-#     tasks_list.append((bot.follow_following, {'user_id': item}))
+for item in follow_following_list:
+    tasks_list.append((bot.follow_following, {'user_id': item}))
 
 for item in like_hashtags_list:
     tasks_list.append((bot.like_hashtag, {'hashtag': item, 'amount': None}))
