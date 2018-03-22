@@ -19,7 +19,7 @@ parser.add_argument('-p', type=str, help="password")
 parser.add_argument('-proxy', type=str, help="proxy")
 args = parser.parse_args()
 
-bot = Bot(max_unfollows_per_day=500)
+bot = Bot(max_unfollows_per_day=800)
 
 bot.login(username='1sturban', password='Insta12#',
           proxy=args.proxy)
