@@ -21,6 +21,6 @@ args = parser.parse_args()
 
 bot = Bot(max_unfollows_per_day=800)
 
-bot.login(username='1sturban', password='FirstU12#',
+bot.login(username='1sturban', password='Insta12#',
           proxy=args.proxy)
 bot.unfollow_non_followers()
